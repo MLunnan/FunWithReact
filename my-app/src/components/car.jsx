@@ -1,21 +1,30 @@
-import React from 'react';
+import React, {useState} from 'react';
 
-const Car = (props) => {
+const Car = () => {
+    const [carColor, setCarColor] = useState("red")
+    const [showSeat, setShowSeat, ] = useState(true)
+    const onClickChangeColor = () => {
+        const newColor = carColor === "red" ? "blue" : "red"
+        setCarColor(newColor)
+    }
     return (
         <div>
             this is a
-            <span style={{color: props.carColor}}> {props.carColor} </span>
+            <span style={{color: carColor}}> {carColor} </span>
             car
-            <Seat 
+            <button onClick={onClickChangeColor}>Change the color</button>
+            <button onClick={()=>setShowSeat(!showSeat)}>Toggle seat</button>
+            {showSeat? <Seat 
             seatColor="green" 
-            showColor={true}/>
+            showColor={true}/>:true}
+            
         </div>
     );
 }
-const Seat = (props) => {
+const Seat = () => {
     return (
         <div>
-            this is a {props.showColor ? props.seatColor : ""} seat
+            this is a seat
         </div>
     )
 }

@@ -8,7 +8,8 @@ function App() {
         <Title />
         <Sidenav />
       </header>
-      <Car carColor="red" />
+      <Car />
+      <img src="../Images/birds.jpg" alt="birds" className="moving"></img>
     </div>
   );
 }

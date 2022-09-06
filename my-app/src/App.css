@@ -36,3 +36,20 @@
     transform: rotate(360deg);
   }
 }
+
+.moving {
+  animation-duration: 1s;
+  animation-name: moving;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  position: absolute;
+}
+
+@keyframes moving {
+  from {
+      left: 40%;
+  }
+  to {
+      left: 30%;
+  }
+}
