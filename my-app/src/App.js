@@ -1,5 +1,4 @@
-import Sidenav from "./sidenav/sidenav";
-import Title from "./title/title";
+import { Sidenav, Title, Car } from "./components/export";
 import "./App.css";
 
 function App() {
@@ -9,6 +8,7 @@ function App() {
         <Title />
         <Sidenav />
       </header>
+      <Car carColor="red" />
     </div>
   );
 }
