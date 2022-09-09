@@ -17,7 +17,6 @@ const Car = () => {
             {showSeat? <Seat 
             seatColor="green" 
             showColor={true}/>:true}
-            
         </div>
     );
 }
