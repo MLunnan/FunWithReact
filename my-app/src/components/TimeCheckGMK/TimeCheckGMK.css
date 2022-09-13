@@ -1,0 +1,23 @@
+.bright{
+    background-color: black !important;
+    color: white;
+}
+.timeCheck{
+    text-align: center;
+}
+.clock{
+    display: flex;
+    justify-content: center;
+    filter: invert(100%);
+}
+.white{
+    display: flex;
+    justify-content: center;
+}
+.clockBtn{
+    cursor: pointer;
+    margin: 2rem;
+}
+.list{
+    list-style: none;
+}

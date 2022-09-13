@@ -1,4 +1,4 @@
-import { Sidenav, Title, Car, Table } from "./components/export";
+import { Sidenav, Title, Car, Table, TimeCheckGMK } from "./components/export";
 import "./App.css";
 
 function App() {
@@ -10,6 +10,7 @@ function App() {
       </header>
       <Car />
       <Table />
+      <TimeCheckGMK />
     </div>
   );
 }
