@@ -1,4 +1,4 @@
-import { Sidenav, Title, Car } from "./components/export";
+import { Sidenav, Title, Car, Table } from "./components/export";
 import "./App.css";
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
         <Sidenav />
       </header>
       <Car />
-      <img src="../Images/birds.jpg" alt="birds" className="moving"></img>
+      <Table />
     </div>
   );
 }
