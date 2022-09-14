@@ -7,7 +7,7 @@ function App() {
     const [itemsBought, setItemsBought] = useState(0)
 
     const onBuyItem = (clicks: number) => {
-        const totalItemsBought = itemsBought + clicks
+        const totalItemsBought: number = itemsBought + clicks
         setItemsBought(totalItemsBought)
     }
     return (
