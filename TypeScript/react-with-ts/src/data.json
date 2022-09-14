@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Banana",
+        "imgSrc" : "/images/product-1.jpg",
+        "description" : ["this is bananas", "they are yellow"]
+    },
+    {
+        "name": "Apples",
+        "imgSrc" : "/images/product-2.jpg",
+        "description" : ["this is apples", "they are red"]
+    },
+    {
+        "name": "Carrots",
+        "imgSrc" : "/images/product-3.jpg",
+        "description" : ["this is carrots", "they are orange"]
+    }
+]

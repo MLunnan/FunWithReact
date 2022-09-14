@@ -1,22 +1,22 @@
 import React from "react";
 import "./App.css";
+import Product from "./components/Product";
+import data from "./data.json";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h2>My React ts App</h2>
+      <div style={{ display: "flex", flexDirection: "row" }}>
+        {data.map((item) => (
+          <Product
+            imgSrc={item.imgSrc}
+            name={item.name}
+            description={item.description}
+          />
+        ))}
+      </div>
+      {/*<Product />*/}
     </div>
   );
 }
