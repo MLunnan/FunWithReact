@@ -1,12 +1,12 @@
-.wrapper{
+.wrapper {
     border: 2px solid blueviolet;
     height: 375px;
     width: 200px;
     padding: 10px;
     margin: 20px;
 }
-.product-image{
+.product-image {
     height: 200px;
     width: 200px;
-    object-fit: cover
+    object-fit: cover;
 }
