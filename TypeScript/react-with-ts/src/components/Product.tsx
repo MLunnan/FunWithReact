@@ -6,13 +6,13 @@ interface IProduct {
     name: string
     description: string[]
     buttonText?: string | number
-    functionToRun?: () => void
+    functionToRun?: (param: number) => void
 }
 
 const Product = (props: IProduct) => {
     const onButtonClick = () => {
         if (props.functionToRun !== undefined) {
-            props.functionToRun()
+            props.functionToRun(1)
         }
     }
     return (

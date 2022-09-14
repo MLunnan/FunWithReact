@@ -26,6 +26,7 @@ function App() {
                     name={data[0].name}
                     description={data[0].description}
                     buttonText={'buy'}
+                    functionToRun={onBuyItem}
                 />
             </div>
             <div>Items bought: {itemsBought}</div>
